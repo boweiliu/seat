@@ -34,11 +34,13 @@ SOFTWARE.
 |
 */
 
+
 Route::group(array('prefix' => 'account'), function() {
 
     Route::controller('login', 'SessionController');
     Route::controller('password', 'RemindersController');
     Route::controller('register', 'RegisterController');
+    Route::controller('oauth', 'OAuthController');
 
 });
 
