@@ -41,7 +41,7 @@ Route::group(array('prefix' => 'account'), function() {
     Route::controller('password', 'RemindersController');
     Route::controller('register', 'RegisterController');
     Route::controller('oauth', 'OAuthController');
-    // oauth endpoint locatd at seat/account/oauth/validate
+    // oauth endpoint locatd at seat/account/oauth/authorize
 
 });
 

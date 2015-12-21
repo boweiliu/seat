@@ -35,14 +35,14 @@ class OAuthController extends BaseController
 */
     /*
     |--------------------------------------------------------------------------
-    | getValidate()
+    | getAuthorize()
     |--------------------------------------------------------------------------
     | 
     | whoo i have no clue what this does
     |
     */
 
-    public function getValidate()
+    public function getAuthorize()
     {
         return Redirect::action('SessionController@getSignIn')
             ->with('success', 'OAuth testing successful.');
